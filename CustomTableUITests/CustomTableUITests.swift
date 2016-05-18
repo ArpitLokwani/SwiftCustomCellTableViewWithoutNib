@@ -3,7 +3,6 @@
 //  CustomTableUITests
 //
 //  Created by Arpit Lokwani on 5/18/16.
-//  Copyright © 2016 Embitel. All rights reserved.
 //
 
 import XCTest

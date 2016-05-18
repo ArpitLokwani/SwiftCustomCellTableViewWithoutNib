@@ -14,6 +14,9 @@
 		4DD694861CEC50BB00E3D787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD694841CEC50BB00E3D787 /* LaunchScreen.storyboard */; };
 		4DD694911CEC50BB00E3D787 /* CustomTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD694901CEC50BB00E3D787 /* CustomTableTests.swift */; };
 		4DD6949C1CEC50BC00E3D787 /* CustomTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6949B1CEC50BC00E3D787 /* CustomTableUITests.swift */; };
+		4DD694AA1CEC63EA00E3D787 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD694A91CEC63EA00E3D787 /* CustomCell.swift */; };
+		4DD694AE1CEC6DF300E3D787 /* ALCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD694AD1CEC6DF300E3D787 /* ALCustomCell.xib */; };
+		4DD694B01CEC6F1B00E3D787 /* ALCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD694AF1CEC6F1B00E3D787 /* ALCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4DD694971CEC50BC00E3D787 /* CustomTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD6949B1CEC50BC00E3D787 /* CustomTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableUITests.swift; sourceTree = "<group>"; };
 		4DD6949D1CEC50BC00E3D787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD694A91CEC63EA00E3D787 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4DD694AD1CEC6DF300E3D787 /* ALCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALCustomCell.xib; sourceTree = "<group>"; };
+		4DD694AF1CEC6F1B00E3D787 /* ALCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		4DD6946F1CEC50BB00E3D787 = {
 			isa = PBXGroup;
 			children = (
+				4DD694AF1CEC6F1B00E3D787 /* ALCustomCell.swift */,
+				4DD694AD1CEC6DF300E3D787 /* ALCustomCell.xib */,
+				4DD694A91CEC63EA00E3D787 /* CustomCell.swift */,
 				4DD6947A1CEC50BB00E3D787 /* CustomTable */,
 				4DD6948F1CEC50BB00E3D787 /* CustomTableTests */,
 				4DD6949A1CEC50BC00E3D787 /* CustomTableUITests */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD694AE1CEC6DF300E3D787 /* ALCustomCell.xib in Resources */,
 				4DD694861CEC50BB00E3D787 /* LaunchScreen.storyboard in Resources */,
 				4DD694831CEC50BB00E3D787 /* Assets.xcassets in Resources */,
 				4DD694811CEC50BB00E3D787 /* Main.storyboard in Resources */,
@@ -257,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD6947E1CEC50BB00E3D787 /* ViewController.swift in Sources */,
+				4DD694B01CEC6F1B00E3D787 /* ALCustomCell.swift in Sources */,
+				4DD694AA1CEC63EA00E3D787 /* CustomCell.swift in Sources */,
 				4DD6947C1CEC50BB00E3D787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
