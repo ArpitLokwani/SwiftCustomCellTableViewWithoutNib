@@ -11,12 +11,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     var tableView: UITableView  =   UITableView()
     
-    var items: [String] = ["Demo1", "Demo2", "Demo3","Demo4", "Demo5", "Demo6","Demo7", "Demo8", "Demo9"]
+    var items: [String] = ["Cell 1", "Cell 2", "Cell 3","Cell 4", "Cell 5", "Cell 6","Cell 7", "Cell 8", "Cell 9"]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.frame         =   CGRectMake(0, 50, self.view.frame.width, self.view.frame.height);
+        tableView.frame         =   CGRectMake(0, 10, self.view.frame.width, self.view.frame.height);
         tableView.delegate      =   self
         tableView.dataSource    =   self
         tableView.backgroundColor = UIColor .whiteColor();
@@ -32,17 +32,35 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let identifier = "ALCustomCell"
-        
-        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(identifier) 
-        
-        if cell == nil {
-            tableView.registerNib(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
-            cell = tableView.dequeueReusableCellWithIdentifier(identifier) 
-        }
-        
-        return cell
+        // ******* This is for custom cell with nib
 
+        
+//        let identifier = "ALCustomCell"
+//        
+//        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier(identifier) 
+//        
+//        if cell == nil {
+//            tableView.registerNib(UINib(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
+//            cell = tableView.dequeueReusableCellWithIdentifier(identifier) 
+//        }
+//        
+//        return cell
+      //  let identifier = "CustomCell"
+        
+        
+        // ******* This is for custom cell programatically
+        
+        var cell : CustomCell!
+        if cell == nil {
+            cell = CustomCell(style: UITableViewCellStyle.Default, reuseIdentifier: NSStringFromClass(CustomCell))
+
+        }
+        cell.testLabel?.text = items[indexPath.row]
+        
+        
+        // If extra cell customization is needed do so here
+        return cell;
+        
        
     }
     

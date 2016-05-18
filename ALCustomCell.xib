@@ -25,7 +25,7 @@
             <connections>
                 <outlet property="ALCustomLabel" destination="dSY-pP-HTe" id="i7B-cw-nao"/>
             </connections>
-            <point key="canvasLocation" x="479" y="160.5"/>
+            <point key="canvasLocation" x="421" y="206.5"/>
         </tableViewCell>
     </objects>
 </document>

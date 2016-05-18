@@ -14,6 +14,14 @@ class CustomCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+       
+        // here create your stuff programatically 
+        
+        testLabel = UILabel(frame: CGRectMake(20, 10, 200, 21))
+        testLabel!.textAlignment = NSTextAlignment.Left
+        self.addSubview(testLabel!)
+        
+        
  
     }
 
